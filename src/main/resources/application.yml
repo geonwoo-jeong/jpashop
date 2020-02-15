@@ -7,10 +7,10 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: create # 애플리케이션을 실행하는 시점에 모든 Entity를 지우고 다시 생성함
+      ddl-auto: create
     properties:
-#      show_sql: true     // System.out으로 로그를 찍음으로 logging lvel에서 설정할 것
-      format_sql: true
+      hibernate:
+        format_sql: true
 
 logging:
   level:
