@@ -33,12 +33,15 @@ public abstract class Item {
      * stock increase
      */
     public void addStock(int quantity) {
+        if (quantity < 0) {
+            throw new NotEnoughStockException("only positive integer");
+        }
         this.stockQuantity += quantity;
     }
 
     public void removeStock(int quantity) {
         int restStock = this.stockQuantity - quantity;
-        if (restStock <0) {
+        if (restStock < 0) {
             throw new NotEnoughStockException("need more stock");
         }
         this.stockQuantity = restStock;
