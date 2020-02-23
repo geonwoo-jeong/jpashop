@@ -16,6 +16,9 @@
 
 ## Tips
 
+### Domain Model Pattern 으로 작성 됨
+- 
+
 ### Entity에서는 가급적 Setter를 사용하지 말자
 - Setter가 모두 열려있으면 변경 포인트가 너무 많아서 유지보수가 어렵다.
 
