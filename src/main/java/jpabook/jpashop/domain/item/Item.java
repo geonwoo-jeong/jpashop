@@ -12,7 +12,7 @@ import java.util.List;
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE) // 테이블 구성 전략
 @DiscriminatorColumn(name = "dtype") // 구별자 컬럼
-@Getter
+@Getter @Setter
 public abstract class Item {
 
     @Id
